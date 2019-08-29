@@ -1,0 +1,22 @@
+New-Item $SChannelRegPath -Name “TLS 1.0”
+
+New-Item $SChannelRegPath+”\TLS 1.0″ -Name SERVER
+
+New-ItemProperty -Path $SChannelRegPath+”\TLS 1.0\SERVER” `
+-Name Enabled -Value 0 -PropertyType DWORD
+
+New-Item $SChannelRegPath+”\TLS 1.1\Server” –force
+
+New-Item $SChannelRegPath+”\TLS 1.1\Client” –force
+
+New-ItemProperty -Path $SChannelRegPath+”\TLS 1.1\Server” `
+-Name Enabled -Value 0 -PropertyType DWORD
+
+New-ItemProperty -Path $SChannelRegPath+”\TLS 1.1\Server” `
+-Name DisabledByDefault -Value 0 -PropertyType DWORD
+
+New-ItemProperty -Path $SChannelRegPath+”\TLS 1.1\Client” `
+-Name Enabled -Value 0 -PropertyType DWORD
+
+New-ItemProperty -Path $SChannelRegPath+”\TLS 1.1\Client” `
+-Name DisabledByDefault -Value 0 -PropertyType DWORD
