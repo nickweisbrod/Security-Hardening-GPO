@@ -5,6 +5,9 @@ As I flesh this list out I am going to do my best to segragate the registry sett
 
 Hover over update descriptions for vulnerability information on each.
 
+# Main Vulnerabilities we are combating here:
+Bar Mitzvah Attack is remediated by disabling the RC4 cipher suite
+
 
 SQL updates
 https://buildnumbers.wordpress.com/sqlserver/ -List of SQL versions with links to downlaod
