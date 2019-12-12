@@ -1,4 +1,4 @@
-<-- So far I have only implementeed this on workstations, ran into some trouble implementing on some webservers/DBs and AD/file server infrastructure when implementing this change -->
+<!-- So far I have only implementeed this on workstations, ran into some trouble implementing on some webservers/DBs and AD/file server infrastructure when implementing this change -->
 
 <?xml version="1.0" encoding="utf-8"?>
 <RegistrySettings clsid="{A3CCFC41-DFDB-43a5-8D26-0FE8B954DA51}"><Registry clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="Enabled" status="Enabled" image="12" bypassErrors="1" changed="2018-06-15 17:09:55" uid="{F20CB0A8-0666-41E5-80DB-EBA929AF7FAD}"><Properties action="U" displayDecimal="0" default="0" hive="HKEY_LOCAL_MACHINE" key="SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128" name="Enabled" type="REG_DWORD" value="00000000"/></Registry>
