@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RegistrySettings clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="DisabledTsx" status="DisabledTsx" image="12" changed="2019-11-25 16:54:33" uid="{F5F36BDA-3EEE-4897-BEA0-49E08F120E1A}"><Properties action="U" displayDecimal="1" default="0" hive="HKEY_LOCAL_MACHINE" key="SYSTEM\CurrentControlSet\Control\Session Manager\kernel" name="DisabledTsx" type="REG_DWORD" value="00000001"/>
+<RegistrySettings clsid="{9CD4B2F4-923D-47f5-A062-E897DD1DAD50}" name="DisableTsx" status="DisableTsx" image="12" changed="2019-11-25 16:54:33" uid="{F5F36BDA-3EEE-4897-BEA0-49E08F120E1A}"><Properties action="U" displayDecimal="1" default="0" hive="HKEY_LOCAL_MACHINE" key="SYSTEM\CurrentControlSet\Control\Session Manager\kernel" name="DisableTsx" type="REG_DWORD" value="00000001"/>
 </RegistrySettings>
 
 <!--By default, all Windows client operating systems and Windows Server 2019 have the mitigation for this vulnerability enabled. However, the earlier Windows Server versions do not have this mitigation enabled by default.
