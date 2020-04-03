@@ -1,0 +1,11 @@
+#https://support.microsoft.com/en-us/help/4520412/2020-ldap-channel-binding-and-ldap-signing-requirements-for-windows 
+#https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV190023
+#These 3 registry changes need to be made to solidify March Windows updates/rollups. Specifically for domain controllers.
+#This will mitigate MitM and LDAP packet replay attacks. Windows XP is the only Windows OS not compatible with this change.
+
+#Modifies LDAP events diagnostic logging
+Reg Add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NTDS\Diagnostics /v "16 LDAP Interface Events" /t REG_DWORD /d 2 
+
+#Changes Group Policy LDAP Server and Client signing requirements 
+Reg Add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NTDS\Parameters /v "LdapEnforceChannelBinding" /t REG_DWORD /d 2
+Reg Add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NTDS\Parameters /v "LDAPServerIntegrity" /t REG_DWORD /d 2
